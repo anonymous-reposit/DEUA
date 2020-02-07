@@ -8,12 +8,12 @@ subplot(2,1,1);
 
 x = [1:13] .*500 + 1500;
 
-UC_input     = importdata('../../Python/DEUA/OutPut/EUA/UC.txt');
-LD_input     = importdata('../../Python/DEUA/OutPut/EUA/LD.txt');
-FFD_input    = importdata('../../Python/DEUA/OutPut/EUA/FFD.txt');
-FUZZY_input  = importdata('../../Python/DEUA/OutPut/EUA/FC.txt');
-Random_input = importdata('../../Python/DEUA/OutPut/EUA/Random.txt');
-Tre_input    = importdata('../../Python/DEUA/OutPut/EUA/Threshold.txt');
+UC_input     = importdata('../../OutPut/EUA/UC.txt');
+LD_input     = importdata('../../OutPut/EUA/LD.txt');
+FFD_input    = importdata('../../OutPut/EUA/FFD.txt');
+FUZZY_input  = importdata('../../OutPut/EUA/FC.txt');
+Random_input = importdata('../../OutPut/EUA/Random.txt');
+Tre_input    = importdata('../../OutPut/EUA/Threshold.txt');
 
 UC_ori     = str2num(UC_input{1});
 LD_ori     = str2num(LD_input{1});
@@ -54,12 +54,12 @@ subplot(2,1,2);
 
 x = [1:13] .*500 + 5500;
 
-UC_input     = importdata('../../Python/DEUA/OutPut/Telecom/UC.txt');
-LD_input     = importdata('../../Python/DEUA/OutPut/Telecom/LD.txt');
-FFD_input    = importdata('../../Python/DEUA/OutPut/Telecom/FFD.txt');
-FUZZY_input  = importdata('../../Python/DEUA/OutPut/Telecom/FC.txt');
-Random_input = importdata('../../Python/DEUA/OutPut/Telecom/Random.txt');
-Tre_input    = importdata('../../Python/DEUA/OutPut/Telecom/Threshold.txt');
+UC_input     = importdata('../../OutPut/Telecom/UC.txt');
+LD_input     = importdata('../../OutPut/Telecom/LD.txt');
+FFD_input    = importdata('../../OutPut/Telecom/FFD.txt');
+FUZZY_input  = importdata('../../OutPut/Telecom/FC.txt');
+Random_input = importdata('../../OutPut/Telecom/Random.txt');
+Tre_input    = importdata('../../OutPut/Telecom/Threshold.txt');
 
 UC_ori     = str2num(UC_input{1});
 LD_ori     = str2num(LD_input{1});
