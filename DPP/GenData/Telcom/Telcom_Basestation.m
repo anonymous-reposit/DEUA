@@ -7,8 +7,8 @@ EdgeServers = {};
 
 for i=1:length(startTime)
     flag = 1;
-    la = latitude(i);  % 纬度
-    lo = longitude(i); % 经度
+    la = latitude(i);  % latitude
+    lo = longitude(i); % longitude
     for j=1:length(EdgeServers)
         if EdgeServers{j}(1) == la && EdgeServers{j}(2) == lo
             flag = 0;
@@ -23,13 +23,13 @@ end
 BSPosition = [];
 BSPosition_ori = [];
 for i=1:length(EdgeServers)
-    la = EdgeServers{i}(1);  % 纬度 1度约111km
-    lo = EdgeServers{i}(2);  % 经度 1度111km
-    % 左下 (31.207868, 121.442130)
-    % 右上 (31.244629, 121.510040)
+    la = EdgeServers{i}(1);  % latitude 1 =  111km
+    lo = EdgeServers{i}(2);  % longitude 111km
+    % lower left (31.207868, 121.442130)
+    % upper right (31.244629, 121.510040)
     
-    % 左上 (31.244629, 121.442130)
-    % 右下 (31.207868, 121.510040)
+    % upper left (31.244629, 121.442130)
+    % lower right (31.207868, 121.510040)
     % if la > 31.155837 && la < 31.299173 && lo > 121.314609 && lo < 121.647857
     if la > 31.207868 && la < 31.244629 && lo > 121.442130 && lo < 121.510040
         BSPosition_ori(end+1, :) = [lo, la];

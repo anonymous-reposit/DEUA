@@ -33,5 +33,3 @@ end
 surf(x, y, z);
 contourf(x, y, z);
 colorbar
-
-% 如何生成一些新的请求？

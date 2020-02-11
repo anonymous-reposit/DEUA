@@ -25,8 +25,8 @@ for i=1:length(UPosition)
     z(xind, yind) = z(xind, yind) + 1;
 end
 
-% 经度 121.442130   121.510040
-% 纬度 31.207868    31.244629
+% longitude 121.442130   121.510040
+% latitude 31.207868    31.244629
 la_gap = 121.510040 - 121.442130;
 lo_gap = 31.244629 - 31.207868;
 la_scal = la_gap / xm;
